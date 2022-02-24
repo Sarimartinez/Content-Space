@@ -635,6 +635,42 @@ footer {
         margin-top: 140px;
     }
 
+    .nombre-1:hover{
+        transform: none;
+    }
+
+    .nombre-2:hover{
+        transform: none;
+    }
+
+    .nombre-3:hover{
+        transform: none;
+    }
+
+    .foto-inicio-1:hover{
+        transform: none;
+    }
+
+    .foto-inicio-2:hover{
+        transform: none;
+    }
+
+    .foto-inicio-3:hover{
+        transform: none;
+    }
+
+    .descripcion-1:hover{
+        transform: none;
+    }
+
+    .descripcion-2:hover{
+        transform: none;
+    }
+
+    .descripcion-3:hover{
+        transform: none;
+    }
+
     /* responsive por que cs */
     
     #grid1 {
