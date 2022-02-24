@@ -237,6 +237,10 @@ li:hover{
     color: #FF8D8D;
 }
 
+.nav-tabs {
+    background-color: #FF8D8D;
+}
+
 footer {
     grid-area: footer;
     padding: 10px;
