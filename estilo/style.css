@@ -18,64 +18,11 @@ body{
     text-align: justify;
 }
 
-
-#grid {
-    display: grid;
-    grid-template-areas: 
-    "logo menu menu menu"
-    "logo frase frase frase"
-    "logo fotos fotos fotos"
-    "logo parrafo parrafo parrafo"
-    "logo footer footer footer"
-    ;
-    grid-template-columns: 9% auto auto 15%;
-    grid-template-rows: 100px 0.5fr 2fr 300px;
-    gap: 5px;
-}
-
-header {
-    grid-area: logo;
-    position: relative;
-    padding: 10px;
-    background-color: #FF8D8D;
-    
-}
-
-nav {
-    grid-area: menu;
-    padding: 10px;
-    background-color: #FF8D8D;
-}
-
-.header__navigation{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    list-style-type: none;
-    margin: 2px;
-    padding: 2px;
-    background-color: #FF8D8D;
-    overflow:hidden;
-    text-transform: uppercase;
-    font-size: 14px;
-    
-}
-
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-    
-}
-
-li:hover{
-    background-color: gray;
-    
-}
-
 /*estilo index*/
+
+.nav-link {
+    color: white;
+}
 
 #frase-inicio {
     grid-area: frase;
