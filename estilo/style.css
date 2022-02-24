@@ -186,14 +186,32 @@ li:hover{
     margin-top: 50px;
 }
 
+.descripcion-1:hover {
+    transform: translateX(100px);
+    transition-property: all;
+    transition-duration: 1.5s;
+}
+
 .descripcion-2 {
     font-size: 20px;
     margin-top: 50px;
 }
 
+.descripcion-2:hover {
+    transform: translateX(100px);
+    transition-property: all;
+    transition-duration: 1.5s;
+}
+
 .descripcion-3 {
     font-size: 20px;
     margin-top: 50px;
+}
+
+.descripcion-3:hover {
+    transform: translateX(100px);
+    transition-property: all;
+    transition-duration: 1.5s;
 }
 
 .parrafo-inicio {
