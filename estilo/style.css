@@ -32,6 +32,27 @@ header {
     background-color: #FF8D8D;
 }
 
+#grid {
+    display: grid;
+    grid-template-areas: 
+    "logo logo"
+    "menu menu"
+    "frase frase"
+    "fotos fotos"
+    "parrafo parrafo"
+    "footer footer"
+    ;
+}
+
+header {
+    grid-area: logo;
+}
+
+.nav-tabs {
+    grid-area: menu;
+}
+
+
 #frase-inicio {
     grid-area: frase;
     padding: 10px;
@@ -61,6 +82,15 @@ header {
     justify-content: space-around;
     color: #FF8D8D;
 }
+
+.parrafo-inicio {
+    grid-area: parrafo;
+}
+
+.text-center {
+    grid-area: footer;
+}
+
 
 .nombre-1 {
     letter-spacing: 0.1cm;
@@ -192,73 +222,43 @@ header {
     color: #FF8D8D;
 }
 
-footer {
-    grid-area: footer;
-    padding: 10px;
+.card-header {
     background-color: #FF8D8D;
-}
-
-
-.formulario_pie{
-    line-height: 25px;
-    text-transform: none;
-    font-size: 15px;
 }
 
 .footer__navigation {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     list-style-type: none;
     background-color: #FF8D8D;
     font-size: 14px;
     text-transform: uppercase;
     
 }
+
 
 /*estilo por que cs*/
 
 #grid1 {
     display: grid;
     grid-template-areas: 
-    "logo menu menu menu"
-    "logo frase frase frase"
-    "logo content content content"
-    "logo footer footer footer"
+    "logo logo"
+    "menu menu"
+    "frase frase"
+    "content content"
+    "footer footer"
     ;
-    grid-template-columns: 9% auto auto 15%;
-    grid-template-rows: 100px auto auto auto;
-    gap: 5px;
-    min-height: 100%;
 }
 
 header {
     grid-area: logo;
-    position: relative;
-    padding: 10px;
-    background-color: #FF8D8D;
-    
-    
 }
 
-nav {
+.nav-tabs {
     grid-area: menu;
-    padding: 10px;
-    background-color: #FF8D8D;
 }
 
-.header__navigation{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    list-style-type: none;
-    margin: 2px;
-    padding: 2px;
-    background-color: #FF8D8D;
-    overflow:hidden;
-    text-transform: uppercase;
-    font-size: 14px;
-}
 
 li a{
     display: block;
@@ -345,25 +345,10 @@ li:hover{
 
 }
 
-
-
-footer {
-    grid-area: footer;
-    padding: 10px;
-    background-color: #FF8D8D;
-}
-
-
-.formulario_pie{
-    line-height: 25px;
-    text-transform: none;
-    font-size: 15px;
-}
-
 .footer__navigation {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     list-style-type: none;
     background-color: #FF8D8D;
     font-size: 14px;
@@ -371,26 +356,26 @@ footer {
     
 }
 
-.footer-problem {
-    margin-bottom: -20px;
-    margin-left: -10px;
-    margin-right: -10px;
-}
 
 /* estilo creadores */
 
 #grid2 {
     display: grid;
     grid-template-areas: 
-    "logo menu menu menu"
-    "logo frase frase frase"
-    "logo content content content"
-    "logo footer footer footer"
+    "logo logo"
+    "menu menu"
+    "frase frase"
+    "content content"
+    "footer footer"
     ;
-    grid-template-columns: 9% auto auto 15%;
-    grid-template-rows: 100px auto auto auto;
-    gap: 5px;
-    min-height: 100%;
+}
+
+header {
+    grid-area: logo;
+}
+
+.nav-tabs {
+    grid-area: menu;
 }
 
 #frase-inicio2 {
@@ -452,15 +437,20 @@ footer {
 #grid3 {
     display: grid;
     grid-template-areas: 
-    "logo menu menu menu"
-    "logo frase frase frase"
-    "logo formulario formulario formulario"
-    "logo footer footer footer"
+    "logo logo"
+    "menu menu"
+    "frase frase"
+    "formulario formulario"
+    "footer footer"
     ;
-    grid-template-columns: 9% auto auto 15%;
-    grid-template-rows: 100px auto auto auto;
-    gap: 5px;
-    min-height: 100%;
+}
+
+header {
+    grid-area: logo;
+}
+
+.nav-tabs {
+    grid-area: menu;
 }
 
 #frase-inicio3 {
@@ -542,10 +532,6 @@ footer {
     margin-bottom: 20px;
 }
 
-
-
-
-
 /* responsive */
 
 @media screen and (max-width: 700px) {
@@ -563,11 +549,9 @@ footer {
     }
 
     header {
-        background-color: white;
+        background-color: #FF8D8D;
     }
-    nav {
-        background-color: white;
-    }
+
 
     .frase-inicio {
        text-align: center;
@@ -732,19 +716,16 @@ footer {
     }
 
     header {
-        background-color: white;
+        background-color: #FF8D8D;
+    }
+
+
+    .nav-tabs {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
     }
     
-
-    nav {
-        background-color: white;
-    }
-
-   .header__navigation {
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-    }
     
     .frase-inicio {
        text-align: center;
@@ -792,7 +773,7 @@ footer {
     .footer__navigation {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     
 
