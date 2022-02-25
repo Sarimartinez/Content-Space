@@ -20,8 +20,16 @@ body{
 
 /*estilo index*/
 
+header {
+    background-color: #FF8D8D;
+}
+
 .nav-link {
     color: white;
+}
+
+.nav-tabs {
+    background-color: #FF8D8D;
 }
 
 #frase-inicio {
@@ -182,10 +190,6 @@ body{
 
 .parrafo-inicio-color{
     color: #FF8D8D;
-}
-
-.nav-tabs {
-    background-color: #FF8D8D;
 }
 
 footer {
@@ -567,7 +571,7 @@ footer {
 
     .frase-inicio {
        text-align: center;
-       margin-top: 10px;
+       margin-top: 30px;
        border: 5px solid #FF8D8D;
        border-radius: 50px;
     }
@@ -576,6 +580,14 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .nombre-1:hover {
+        transform: none;
+    }
+
+    .nombre-2:hover {
+        transform: none;
     }
 
     .foto2 {
@@ -736,7 +748,7 @@ footer {
     
     .frase-inicio {
        text-align: center;
-       margin-top: 10px;
+       margin-top: 40px;
        border: 5px solid #FF8D8D;
        border-radius: 50px;
     }
@@ -746,16 +758,35 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: left;
-        margin-top: -400px;
+        margin-top: -50px;
     }
 
+    .nombre-1 {
+        display: none;
+    }
+    .nombre-2 {
+        display: none;
+    }
+    .nombre-3 {
+        display: none;
+    }
+    .descripcion-1 {
+        display: none;
+    }
+    .descripcion-2 {
+        display: none;
+    }
+    .descripcion-3 {
+        display: none;
+    }
+    
     .foto2 {
         display: grid;
     }
 
     .parrafo-inicio {
         text-align: center;
-        margin-top: 550px;
+        margin-top: 80px;
     }
 
     .footer__navigation {
@@ -764,17 +795,6 @@ footer {
         align-items: flex-start;
     }
     
-    .descripcion-1 {
-        margin: 25px;
-    }
-
-    .descripcion-2 {
-        margin: 25px;
-    }
-
-    .descripcion-3 {
-        margin: 30px;
-    }
 
     /* responsive por que cs */
 
