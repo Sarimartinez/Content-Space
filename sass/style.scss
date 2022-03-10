@@ -17,6 +17,31 @@ body{
     text-align: justify;
 }
 
+h1 {
+    $font-size: 16px;
+    $font-style: italic;
+    $font-weight: lighter;
+    $text-transform: uppercase;
+    $padding: 12px;
+    $margin: 75px 15px 75px 15px;
+    $border: 10px solid #FF8D8D;
+    $border-radius: 50px;
+    $text-align: center;
+}
+
+/* variables */
+
+$font-size: 16px;
+$font-style: italic;
+$font-weight: lighter;
+$text-transform: uppercase;
+$padding: 12px;
+$margin: 75px 15px 75px 15px;
+$border: 10px solid #FF8D8D;
+$border-radius: 50px;
+$text-align: center;
+
+
 /*estilo index*/
 
 header {
@@ -25,10 +50,9 @@ header {
 
 .nav-link {
     color: white;
-}
-
-.nav-tabs {
-    background-color: #FF8D8D;
+    .nav-tabs {
+        background-color: #FF8D8D;
+    }
 }
 
 #grid {
@@ -57,19 +81,6 @@ header {
     padding: 10px;
 }
 
-.frase-inicio {
-    font-size: 16px;
-    font-style: italic;
-    font-weight: lighter;
-    text-transform: uppercase;
-    padding: 12px;
-    margin: 75px 15px 75px 15px;
-    border: 10px solid #FF8D8D;
-    border-radius: 50px;
-    text-align: center;
-}
-
-
 #fotos-nombres-inicio {
     grid-area: fotos;
     padding: 10px;
@@ -95,35 +106,33 @@ header {
     letter-spacing: 0.1cm;
     text-transform: capitalize;
     font-size: 30px;
+    .nombre-1:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        -o-transition-duration: 2s;
+    }
 }
 
-.nombre-1:hover {
-    transform: scale(1.1);
-    transition-property: all;
-    transition-duration: 2s;
-}
 .nombre-2 {
     letter-spacing: 0.1cm;
     text-transform: capitalize;
     font-size: 30px;
-}
-
-.nombre-2:hover {
-    transform: scale(1.1);
-    transition-property: all;
-    transition-duration: 2s;
+    .nombre-2:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        -o-transition-duration: 2s;
+    }
 }
 
 .nombre-3 {
     letter-spacing: 0.1cm;
     text-transform: capitalize;
     font-size: 30px;
-}
-
-.nombre-3:hover {
-    transform: scale(1.1);
-    transition-property: all;
-    transition-duration: 2s;
+    .nombre-3:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        -o-transition-duration: 2s;
+    }
 }
 
 .foto-inicio-1{
@@ -131,12 +140,11 @@ header {
     top: 30px;
     width: 300px;
     height: 300px;
-}
-
-.foto-inicio-1:hover {
-    transform: scale(1.1);
-    transition-property: all;
-    transition-duration: 2s;
+    .foto-inicio-1:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        -o-transition-duration: 2s;
+    }
 }
 
 .foto-inicio-3{
@@ -144,12 +152,11 @@ header {
     top: 30px;
     width: 300px;
     height: 300px;
-}
-
-.foto-inicio-3:hover {
-    transform: scale(1.1);
-    transition-property: all;
-    transition-duration: 2s;
+    .foto-inicio-3:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        -o-transition-duration: 2s;
+    }
 }
 
 .foto-inicio-2{
@@ -157,68 +164,62 @@ header {
     top: 30px;
     width: 300px;
     height: 300px;
-}
-
-.foto-inicio-2:hover {
-    transform: scale(1.1);
-    transition-property: all;
-    transition-duration: 2s;
+    .foto-inicio-2:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        -o-transition-duration: 2s;
+    }
 }
 
 .descripcion-1 {
     font-size: 20px;
     margin-top: 50px;
-}
-
-.descripcion-1:hover {
-    transform: translateX(100px);
-    transition-property: all;
-    transition-duration: 1.5s;
+    .descripcion-1:hover {
+        transform: translateX(100px);
+        transition-property: all;
+        transition-duration: 1.5s;
+    }
 }
 
 .descripcion-2 {
     font-size: 20px;
     margin-top: 50px;
-}
-
-.descripcion-2:hover {
-    transform: translateX(100px);
-    transition-property: all;
-    transition-duration: 1.5s;
+    .descripcion-2:hover {
+        transform: translateX(100px);
+        transition-property: all;
+        transition-duration: 1.5s;
+    }
 }
 
 .descripcion-3 {
     font-size: 20px;
     margin-top: 50px;
-}
-
-.descripcion-3:hover {
-    transform: translateX(100px);
-    transition-property: all;
-    transition-duration: 1.5s;
+    .descripcion-3:hover {
+        transform: translateX(100px);
+        transition-property: all;
+        transition-duration: 1.5s;
+    }
 }
 
 .parrafo-inicio {
     grid-area: parrafo;
     padding: 10px;
-}
-
-.parrafo-inicio {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    word-spacing: 5px;
-    line-height: 40px;
-    text-overflow:ellipsis;
-    text-align: center;
-    justify-content: center;
-    margin: 40px 5px 40px 5px;
-
-}
-
-.parrafo-inicio-color{
-    color: #FF8D8D;
+    .parrafo-inicio {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        line-height: 40px;
+        text-overflow:ellipsis;
+        text-align: center;
+        justify-content: center;
+        margin: 40px 5px 40px 5px;
+        .parrafo-inicio-color{
+            color: #FF8D8D;
+        }
+    }
+    
 }
 
 .card-header {
@@ -265,12 +266,10 @@ li a{
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
-    
-}
-
-li:hover{
-    background-color: #d7dbd8
-    
+    li:hover{
+        background-color: #d7dbd8
+        
+    }
 }
 
 
@@ -279,27 +278,14 @@ li:hover{
     padding: 10px;
 }
 
-.frase-inicio1 {
-    font-size: 16px;
-    font-style: italic;
-    font-weight: lighter;
-    text-transform: uppercase;
-    padding: 12px;
-    margin: 75px 15px 75px 15px;
-    border: 10px solid #FF8D8D;
-    border-radius: 50px;
-    text-align: center;
-}
-
 #content {
     grid-area: content;
     padding: 10px;
-}
-
-#content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    #content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 .foto-aside {
@@ -313,17 +299,14 @@ li:hover{
 .item1 {
     margin: 30px 50px 70px 50px;
     font-size: 20px;
-    
-}
-
-.item2 {
-    margin: 100px 50px 70px 50px;
-    font-size: 20px;
-}
-
-.item3 {
-    margin: 100px 50px 70px 50px;
-    font-size: 20px;
+    .item2 {
+        margin: 100px 50px 70px 50px;
+        font-size: 20px;
+        .item3 {
+            margin: 100px 50px 70px 50px;
+            font-size: 20px;
+        }
+    }
 }
 
 .parrafo-aside {
@@ -334,14 +317,12 @@ li:hover{
     color: #FF8D8D;
     font-weight: bold;
     font-size: 15px;
-
-}
-
-.parrafo-aside:hover {
-    transform: scale(1.5);
-    transition-property: all;
-    transition-duration: 2s;
-
+    .parrafo-aside:hover {
+        transform: scale(1.5);
+        transition-property: all;
+        transition-duration: 2s;
+    
+    }
 }
 
 .footer__navigation {
@@ -382,27 +363,14 @@ header {
     padding: 10px;
 }
 
-.frase-inicio2 {
-    font-size: 16px;
-    font-style: italic;
-    font-weight: lighter;
-    text-transform: uppercase;
-    padding: 12px;
-    margin: 75px 15px 75px 15px;
-    border: 10px solid #FF8D8D;
-    border-radius: 50px;
-    text-align: center;
-}
-
 #content2 {
     grid-area: content;
     padding: 10px;
-}
-
-#content2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    #content2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 .iniciales1 {
@@ -412,23 +380,22 @@ header {
     color: #FF8D8D;
     margin-top: 100px;
     margin-bottom: 20px;
-}
-
-.iniciales2 {
-    letter-spacing: 0.1cm;
-    text-transform: capitalize;
-    font-size: 30px;
-    color: #FF8D8D;
-    margin-bottom: 20px;
-}
-
-.iniciales3 {
-    letter-spacing: 0.1cm;
-    text-transform: capitalize;
-    font-size: 30px;
-    color: #FF8D8D;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    .iniciales2 {
+        letter-spacing: 0.1cm;
+        text-transform: capitalize;
+        font-size: 30px;
+        color: #FF8D8D;
+        margin-bottom: 20px;
+        .iniciales3 {
+            letter-spacing: 0.1cm;
+            text-transform: capitalize;
+            font-size: 30px;
+            color: #FF8D8D;
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+        
+    }
 }
 
 /* estilo contacto */
@@ -457,34 +424,19 @@ header {
     padding: 10px;
 }
 
-.frase-inicio3 {
-    font-size: 16px;
-    font-style: italic;
-    font-weight: lighter;
-    text-transform: uppercase;
-    padding: 12px;
-    margin: 75px 15px 75px 15px;
-    border: 10px solid #FF8D8D;
-    border-radius: 50px;
-    text-align: center;
-}
-
 .formulario {
     grid-area: formulario;
     padding: 10px;
     font-size: 20px;
-    
-}
-
-.formulario {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#formulario {
-    border: 2px solid ;
-
+    .formulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        #formulario {
+            border: 2px solid ;
+        
+        }
+    }
 }
 
 .empezamos {
@@ -649,14 +601,12 @@ header {
 
     .item1 {
         text-align: center;
-    }
-
-    .item2 {
-        text-align: center;
-    }
-
-    .item3 {
-        text-align: center;
+        .item2 {
+            text-align: center;
+            .item3 {
+                text-align: center;
+            }
+        }
     }
 
 
@@ -690,12 +640,11 @@ header {
         margin-top: -20px;
         margin-bottom: 20px;
         text-align: center;
-    }
-
-    .iniciales2 {
-        margin-top: -20px;
-        margin-bottom: 20px;
-        text-align: center;
+        .iniciales2 {
+            margin-top: -20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
     }
 
     .video3 {
@@ -760,8 +709,7 @@ header {
         flex-direction: column;
         justify-content: left;
     }
-    
-    
+
     .frase-inicio {
        text-align: center;
        margin-top: 40px;
@@ -779,21 +727,22 @@ header {
 
     .nombre-1 {
         display: none;
+        .nombre-2 {
+            display: none;
+            .nombre-3 {
+                display: none;
+            }
+        }
     }
-    .nombre-2 {
-        display: none;
-    }
-    .nombre-3 {
-        display: none;
-    }
+
     .descripcion-1 {
         display: none;
-    }
-    .descripcion-2 {
-        display: none;
-    }
-    .descripcion-3 {
-        display: none;
+        .descripcion-2 {
+            display: none;
+            .descripcion-3 {
+                display: none;
+            }
+        }
     }
     
     .foto2 {
@@ -876,16 +825,14 @@ header {
     .iniciales1 {
         margin-top: -20px;
         margin-bottom: 20px;
-    }
-
-    .iniciales2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .iniciales3 {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        .iniciales2 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            .iniciales3 {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
     }
 
     /* responsive contacto */
@@ -919,8 +866,3 @@ header {
     }
 
 }
-
-
-
-
-
