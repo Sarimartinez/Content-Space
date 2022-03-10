@@ -17,6 +17,31 @@ body{
     text-align: justify;
 }
 
+h1 {
+    $font-size: 16px;
+    $font-style: italic;
+    $font-weight: lighter;
+    $text-transform: uppercase;
+    $padding: 12px;
+    $margin: 75px 15px 75px 15px;
+    $border: 10px solid #FF8D8D;
+    $border-radius: 50px;
+    $text-align: center;
+}
+
+/* variables */
+
+$font-size: 16px;
+$font-style: italic;
+$font-weight: lighter;
+$text-transform: uppercase;
+$padding: 12px;
+$margin: 75px 15px 75px 15px;
+$border: 10px solid #FF8D8D;
+$border-radius: 50px;
+$text-align: center;
+
+
 /*estilo index*/
 
 header {
@@ -55,19 +80,6 @@ header {
     grid-area: frase;
     padding: 10px;
 }
-
-.frase-inicio {
-    font-size: 16px;
-    font-style: italic;
-    font-weight: lighter;
-    text-transform: uppercase;
-    padding: 12px;
-    margin: 75px 15px 75px 15px;
-    border: 10px solid #FF8D8D;
-    border-radius: 50px;
-    text-align: center;
-}
-
 
 #fotos-nombres-inicio {
     grid-area: fotos;
@@ -264,17 +276,6 @@ li a{
 #frase-inicio1 {
     grid-area: frase;
     padding: 10px;
-    .frase-inicio1 {
-        font-size: 16px;
-        font-style: italic;
-        font-weight: lighter;
-        text-transform: uppercase;
-        padding: 12px;
-        margin: 75px 15px 75px 15px;
-        border: 10px solid #FF8D8D;
-        border-radius: 50px;
-        text-align: center;
-    }
 }
 
 #content {
@@ -360,17 +361,6 @@ header {
 #frase-inicio2 {
     grid-area: frase;
     padding: 10px;
-    .frase-inicio2 {
-        font-size: 16px;
-        font-style: italic;
-        font-weight: lighter;
-        text-transform: uppercase;
-        padding: 12px;
-        margin: 75px 15px 75px 15px;
-        border: 10px solid #FF8D8D;
-        border-radius: 50px;
-        text-align: center;
-    }
 }
 
 #content2 {
@@ -432,17 +422,6 @@ header {
 #frase-inicio3 {
     grid-area: frase;
     padding: 10px;
-    .frase-inicio3 {
-        font-size: 16px;
-        font-style: italic;
-        font-weight: lighter;
-        text-transform: uppercase;
-        padding: 12px;
-        margin: 75px 15px 75px 15px;
-        border: 10px solid #FF8D8D;
-        border-radius: 50px;
-        text-align: center;
-    }
 }
 
 .formulario {
