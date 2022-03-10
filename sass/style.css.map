@@ -6,4 +6,10 @@
     ],
     "names": [],
     "file": "style.css"
+}aAAa,EAAE,IAAI;GACtB;EAED,AAAA,WAAW,CAAC;IACR,OAAO,EAAE,IAAI;IACb,cAAc,EAAE,MAAM;IACtB,eAAe,EAAE,IAAI;GACxB;EAED,AAAA,gBAAgB,CAAC;IACb,OAAO,EAAE,IAAI;GAChB",
+    "sources": [
+        "style.scss"
+    ],
+    "names": [],
+    "file": "style.css"
 }
