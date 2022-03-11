@@ -101,6 +101,30 @@ header {
     grid-area: footer;
 }
 
+$nombres:(
+    1: #9b79da,
+    2: #e7aaaf,
+    3: #37b5a6,
+);
+
+@each $nombre, $color in $nombres {
+    .nombre-#{$nombre}{
+        color: $color;
+    }
+    
+}
+
+$descripciones:(
+    1: #9b79da,
+    2: #e7aaaf,
+    3: #37b5a6,
+);
+
+@each $descripcion, $color in $descripciones {
+    .descripcion-#{$descripcion}{
+        color: $color;
+    }   
+}
 
 .nombre-1 {
     letter-spacing: 0.1cm;
@@ -109,7 +133,7 @@ header {
     .nombre-1:hover {
         transform: scale(1.1);
         transition-property: all;
-        -o-transition-duration: 2s;
+        transition-duration: 2s;
     }
 }
 
@@ -120,7 +144,7 @@ header {
     .nombre-2:hover {
         transform: scale(1.1);
         transition-property: all;
-        -o-transition-duration: 2s;
+        transition-duration: 2s;
     }
 }
 
