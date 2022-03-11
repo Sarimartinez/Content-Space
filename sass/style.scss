@@ -114,18 +114,6 @@ $nombres:(
     
 }
 
-$descripciones:(
-    1: #9b79da,
-    2: #e7aaaf,
-    3: #37b5a6,
-);
-
-@each $descripcion, $color in $descripciones {
-    .descripcion-#{$descripcion}{
-        color: $color;
-    }   
-}
-
 .nombre-1 {
     letter-spacing: 0.1cm;
     text-transform: capitalize;
@@ -198,6 +186,7 @@ $descripciones:(
 .descripcion-1 {
     font-size: 20px;
     margin-top: 50px;
+    color: map-get($nombres, 1);
     .descripcion-1:hover {
         transform: translateX(100px);
         transition-property: all;
@@ -208,6 +197,7 @@ $descripciones:(
 .descripcion-2 {
     font-size: 20px;
     margin-top: 50px;
+    color: map-get($nombres, 2);
     .descripcion-2:hover {
         transform: translateX(100px);
         transition-property: all;
@@ -218,6 +208,7 @@ $descripciones:(
 .descripcion-3 {
     font-size: 20px;
     margin-top: 50px;
+    color: map-get($nombres, 3);
     .descripcion-3:hover {
         transform: translateX(100px);
         transition-property: all;
