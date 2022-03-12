@@ -413,6 +413,26 @@ header {
     }
 }
 
+.iniciales1 {
+    letter-spacing: 0.1cm;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #FF8D8D;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.iniciales2 {
+    @extend.iniciales1;
+    margin-top: 0px;
+    color:#37b5a6;
+}
+
+.iniciales3 {
+    @extend.iniciales1
+}
+
+
 /* estilo contacto */
 
 #grid3 {
