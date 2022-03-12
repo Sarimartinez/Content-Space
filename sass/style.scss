@@ -388,38 +388,18 @@ header {
     }
 }
 
-.iniciales1 {
-    letter-spacing: 0.1cm;
-    text-transform: capitalize;
-    font-size: 30px;
-    color: #FF8D8D;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    .iniciales2 {
-        letter-spacing: 0.1cm;
-        text-transform: capitalize;
-        font-size: 30px;
-        color: #FF8D8D;
-        margin-bottom: 20px;
-        .iniciales3 {
-            letter-spacing: 0.1cm;
-            text-transform: capitalize;
-            font-size: 30px;
-            color: #FF8D8D;
-            margin-top: 100px;
-            margin-bottom: 20px;
-        }
-        
-    }
+@mixin iniciales ($letter-spacing, $text-transform, $font-size, $color, $margin-top, $margin-bottom) {
+    letter-spacing: $letter-spacing;
+    text-transform: $text-transform;
+    font-size: $font-size;
+    color: $color;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
 }
+    
 
 .iniciales1 {
-    letter-spacing: 0.1cm;
-    text-transform: capitalize;
-    font-size: 30px;
-    color: #FF8D8D;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    @include iniciales(0.1cm, capitalize, 30px, #FF8D8D, 100px, 20px)
 }
 
 .iniciales2 {
