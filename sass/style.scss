@@ -75,6 +75,9 @@ header {
     grid-area: menu;
 }
 
+.dropdown {
+    display: none;
+}
 
 #frase-inicio {
     grid-area: frase;
@@ -518,6 +521,9 @@ header {
         background-color: #FF8D8D;
     }
 
+    .dropdown {
+        display: none;
+    }
 
     .frase-inicio {
        text-align: center;
@@ -706,6 +712,7 @@ header {
         grid-template-areas: 
         "logo"
         "menu"
+        "menuresp"
         "frase"
         "fotos"
         "parrafo"
@@ -720,9 +727,19 @@ header {
 
 
     .nav-tabs {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
+        display: none;
+    }
+
+    .dropdown {
+        grid-area: menuresp;
+    }
+
+    .dropdown{
+        display: block;
+    }
+
+    .btn {
+        background-color: gray;
     }
 
     .frase-inicio {
@@ -783,10 +800,27 @@ header {
         grid-template-areas: 
         "logo"
         "menu"
+        "menuresp"
         "frase"
         "content"
         "footer"
         ;
+    }
+
+    .nav-tabs {
+        display: none;
+    }
+
+    .dropdown {
+        grid-area: menuresp;
+    }
+
+    .dropdown{
+        display: block;
+    }
+
+    .btn {
+        background-color: gray;
     }
 
     .frase-inicio1 {
@@ -818,10 +852,27 @@ header {
         grid-template-areas: 
         "logo"
         "menu"
+        "menuresp"
         "frase"
         "content"
         "footer"
         ;
+    }
+
+    .nav-tabs {
+        display: none;
+    }
+
+    .dropdown {
+        grid-area: menuresp;
+    }
+
+    .dropdown{
+        display: block;
+    }
+
+    .btn {
+        background-color: gray;
     }
 
     .frase-inicio2 {
@@ -857,10 +908,27 @@ header {
         grid-template-areas: 
         "logo"
         "menu"
+        "menuresp"
         "frase"
         "formulario"
         "footer"
         ;
+    }
+    
+    .nav-tabs {
+        display: none;
+    }
+
+    .dropdown {
+        grid-area: menuresp;
+    }
+
+    .dropdown{
+        display: block;
+    }
+
+    .btn {
+        background-color: gray;
     }
 
     .frase-inicio3 {
