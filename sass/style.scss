@@ -68,6 +68,11 @@ header {
     grid-area: menu;
 }
 
+.active {
+    border:#37b5a6 2px solid;
+    padding: 5px;
+}
+
 #frase-inicio {
     grid-area: frase;
     padding: 10px;
