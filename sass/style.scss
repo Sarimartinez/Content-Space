@@ -48,13 +48,6 @@ header {
     background-color: #FF8D8D;
 }
 
-.nav-link {
-    color: white;
-    .nav-tabs {
-        background-color: #FF8D8D;
-    }
-}
-
 #grid {
     display: grid;
     grid-template-areas: 
@@ -71,12 +64,8 @@ header {
     grid-area: logo;
 }
 
-.nav-tabs {
+.navbar {
     grid-area: menu;
-}
-
-.dropdown {
-    display: none;
 }
 
 #frase-inicio {
@@ -521,10 +510,6 @@ header {
         background-color: #FF8D8D;
     }
 
-    .dropdown {
-        display: none;
-    }
-
     .frase-inicio {
        text-align: center;
        margin-top: 30px;
@@ -712,7 +697,6 @@ header {
         grid-template-areas: 
         "logo"
         "menu"
-        "menuresp"
         "frase"
         "fotos"
         "parrafo"
@@ -728,18 +712,6 @@ header {
 
     .nav-tabs {
         display: none;
-    }
-
-    .dropdown {
-        grid-area: menuresp;
-    }
-
-    .dropdown{
-        display: block;
-    }
-
-    .btn {
-        background-color: gray;
     }
 
     .frase-inicio {
@@ -800,7 +772,6 @@ header {
         grid-template-areas: 
         "logo"
         "menu"
-        "menuresp"
         "frase"
         "content"
         "footer"
@@ -809,18 +780,6 @@ header {
 
     .nav-tabs {
         display: none;
-    }
-
-    .dropdown {
-        grid-area: menuresp;
-    }
-
-    .dropdown{
-        display: block;
-    }
-
-    .btn {
-        background-color: gray;
     }
 
     .frase-inicio1 {
@@ -852,7 +811,6 @@ header {
         grid-template-areas: 
         "logo"
         "menu"
-        "menuresp"
         "frase"
         "content"
         "footer"
@@ -861,18 +819,6 @@ header {
 
     .nav-tabs {
         display: none;
-    }
-
-    .dropdown {
-        grid-area: menuresp;
-    }
-
-    .dropdown{
-        display: block;
-    }
-
-    .btn {
-        background-color: gray;
     }
 
     .frase-inicio2 {
@@ -908,7 +854,6 @@ header {
         grid-template-areas: 
         "logo"
         "menu"
-        "menuresp"
         "frase"
         "formulario"
         "footer"
@@ -917,18 +862,6 @@ header {
     
     .nav-tabs {
         display: none;
-    }
-
-    .dropdown {
-        grid-area: menuresp;
-    }
-
-    .dropdown{
-        display: block;
-    }
-
-    .btn {
-        background-color: gray;
     }
 
     .frase-inicio3 {
