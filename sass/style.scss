@@ -397,7 +397,7 @@ header {
     }
 }
 
-/*mixin iniciales al inicio */
+/*mixin iniciales al inicio*/
 
 .iniciales1 {
     @include iniciales(0.1cm, capitalize, 30px, #FF8D8D, 100px, 20px)
@@ -846,14 +846,16 @@ header {
     .iniciales1 {
         margin-top: -20px;
         margin-bottom: 20px;
-        .iniciales2 {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            .iniciales3 {
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
-        }
+    }
+
+    .iniciales2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .iniciales3{
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     /* responsive contacto */
