@@ -38,7 +38,7 @@ body{
     text-align: justify;
 }
 
-h1 {
+h2 {
     $font-size: 16px;
     $font-style: italic;
     $font-weight: lighter;
@@ -61,6 +61,7 @@ header {
     grid-template-areas: 
     "logo logo"
     "menu menu"
+    "titulo titulo"
     "frase frase"
     "fotos fotos"
     "parrafo parrafo"
@@ -85,6 +86,13 @@ header {
     background-color: #37b5a6;
 }
 
+.titulo {
+    grid-area: titulo;
+    text-align: center;
+    margin-top: 30px;
+    color:#37b5a6;
+}
+
 #frase-inicio {
     grid-area: frase;
     padding: 10px;
@@ -106,7 +114,7 @@ header {
     grid-area: parrafo;
 }
 
-.text-center {
+footer {
     grid-area: footer;
 }
 
@@ -269,6 +277,7 @@ $nombres:(
     grid-template-areas: 
     "logo logo"
     "menu menu"
+    "titulo titulo"
     "frase frase"
     "content content"
     "footer footer"
@@ -296,6 +305,12 @@ li a{
     }
 }
 
+.titulo1 {
+    grid-area: titulo;
+    text-align: center;
+    margin-top: 30px;
+    color:#37b5a6;
+}
 
 #frase-inicio1 {
     grid-area: frase;
@@ -333,6 +348,16 @@ li a{
     }
 }
 
+.item1 {
+    text-align: center;
+}
+.item2 {
+    text-align: center;
+}
+.item3 {
+    text-align: center;
+}
+
 .parrafo-aside {
     margin: 130px;
     line-height: 40px;
@@ -368,6 +393,7 @@ li a{
     grid-template-areas: 
     "logo logo"
     "menu menu"
+    "titulo titulo"
     "frase frase"
     "content content"
     "footer footer"
@@ -380,6 +406,13 @@ header {
 
 .nav-tabs {
     grid-area: menu;
+}
+
+.titulo2 {
+    grid-area: titulo;
+    text-align: center;
+    margin-top: 30px;
+    color:#37b5a6;
 }
 
 #frase-inicio2 {
@@ -421,6 +454,7 @@ header {
     grid-template-areas: 
     "logo logo"
     "menu menu"
+    "titulo titulo"
     "frase frase"
     "formulario formulario"
     "footer footer"
@@ -433,6 +467,13 @@ header {
 
 .nav-tabs {
     grid-area: menu;
+}
+
+.titulo3 {
+    grid-area: titulo;
+    text-align: center;
+    margin-top: 30px;
+    color:#37b5a6;
 }
 
 #frase-inicio3 {
@@ -507,6 +548,7 @@ header {
         grid-template-areas: 
         "logo"
         "menu"
+        "titulo"
         "frase"
         "fotos"
         "parrafo"
@@ -524,6 +566,12 @@ header {
        margin-top: 30px;
        border: 5px solid #FF8D8D;
        border-radius: 50px;
+    }
+
+    .titulo {
+        text-align: center;
+        margin-top: 30px;
+        color:#37b5a6;
     }
 
     #fotos-nombres-inicio {
@@ -615,13 +663,26 @@ header {
     }
 
     .item1 {
+        font-size: medium;
+        text-align: justify;
+    }
+    .item2 {
+        font-size: medium;
+        text-align: justify;
+    }
+    .item3 {
+        font-size: medium;
+        text-align: justify;
+    }
+
+    .item1 {
         text-align: center;
-        .item2 {
-            text-align: center;
-            .item3 {
-                text-align: center;
-            }
-        }
+    }
+    .item2 {
+        text-align: center;
+    }
+    .item3 {
+        text-align: center;
     }
 
 
