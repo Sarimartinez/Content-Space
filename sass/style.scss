@@ -563,16 +563,16 @@ header {
     grid-area: menu;
 }
 
-#frase-inicio4 {
-    grid-area: frase;
-    padding: 10px;
-}
-
 .titulo4 {
     grid-area: titulo;
     text-align: center;
     margin-top: 30px;
     color:#37b5a6;
+}
+
+#frase-inicio4 {
+    grid-area: frase;
+    padding: 10px;
 }
 
 strong {
