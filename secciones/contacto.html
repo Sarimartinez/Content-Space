@@ -52,48 +52,48 @@
     </header>
 
     <section id="frase-inicio3">
-        <h1 class="titulo3">Content Space</h1>
-        <h2 class="frase-inicio3">Estas a pocos pasos de encontrar el creador de contenido ideal para tu marca...</h2>
+        <main>
+            <h1 class="titulo3">Content Space</h1>
+            <h2 class="frase-inicio3">Estas a pocos pasos de encontrar el creador de contenido ideal para tu marca...</h2>
+        </main>
     </section>
 
     <section class="formulario">
-        <main>
-            <form>
-                <fieldset id="formulario">
-                    <legend class="empezamos">¿Empezamos?</legend>
-                    <div class="sexo">Sexo:
-                        <select class= "boton" name="sexo">
-                            <option value="femenino">Femenino</option>
-                            <option value="masculino">Masculino</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
+        <form>
+            <fieldset id="formulario">
+                <legend class="empezamos">¿Empezamos?</legend>
+                <div class="sexo">Sexo:
+                    <select class= "boton" name="sexo">
+                        <option value="femenino">Femenino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
                         
-                    <section class="nombre-apellido">
-                        <div>
-                            <label for="nombre_apellido">Nombre:</label>
-                            <input class="nombre" type="text" name="nombre_apellido"> 
-                        </div>
-                        <div>
-                            <label for="nombre_apellido">Apellido:</label>
-                            <input class="apellido" type="text" name="nombre_apellido"> 
-                        </div>
-                    </section>
-    
-                    <div class="comentarios">
-                        <p>Comentarios:</p>
-                        <textarea class="box" name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="newsletter">¿Desea recibir el Newsletter?
-                        <input class="check" type="checkbox" name="acepta" value="1">
+                <section class="nombre-apellido">
+                    <div>
+                        <label for="nombre_apellido">Nombre:</label>
+                        <input class="nombre" type="text" name="nombre_apellido"> 
                     </div>
                     <div>
-                        <input type="submit" value="Enviar Formulario">
-                        <input type="reset" value="Limpiar Formulario">
+                        <label for="nombre_apellido">Apellido:</label>
+                        <input class="apellido" type="text" name="nombre_apellido"> 
                     </div>
-                </fieldset>
-            </form>
-        </main>
+                </section>
+    
+                <div class="comentarios">
+                    <p>Comentarios:</p>
+                    <textarea class="box" name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                </div>
+                <div class="newsletter">¿Desea recibir el Newsletter?
+                    <input class="check" type="checkbox" name="acepta" value="1">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar Formulario">
+                    <input type="reset" value="Limpiar Formulario">
+                </div>
+            </fieldset>
+        </form>
         <img class="foto-formulario" src="../imagenes/foto-inicio-1.png" alt="foto-formulario">
     </section>
 
@@ -120,8 +120,8 @@
             </div>
             <div class="card-body">
                 <h4 class="card-title">Suscríbete al Newsletter</h4>
-                <p class="card-text"><label for="e-mail">Ingresa su mail</label>
-                <input type="text" name="e-mail"></p>
+                <label class="card-text" for="e-mail">Ingresa su mail</label>
+                <input type="text" name="e-mail">
                 <input type="submit" value="Enviar" class="btn btn-secondary">
             </div>
         </div>
