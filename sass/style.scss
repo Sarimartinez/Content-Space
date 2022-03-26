@@ -540,9 +540,108 @@ header {
     margin-bottom: 20px;
 }
 
+/*estilo nosotros*/
+
+#grid4 {
+    display: grid;
+    grid-template-areas: 
+    "logo logo"
+    "menu menu"
+    "titulo titulo"
+    "frase frase"
+    "content content"
+    "parrafo parrafo"
+    "footer footer"
+    ;
+}
+
+header {
+    grid-area: logo;
+}
+
+.nav-tabs {
+    grid-area: menu;
+}
+
+#frase-inicio4 {
+    grid-area: frase;
+    padding: 10px;
+}
+
+.titulo4 {
+    grid-area: titulo;
+    text-align: center;
+    margin-top: 30px;
+    color:#37b5a6;
+}
+
+strong {
+    color: #FF8D8D;
+}
+
+#content4 {
+    grid-area: content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.foto-marca1{
+    position: relative;
+    top: 30px;
+    width: 250px;
+    height: 150px;
+}
+
+.foto-marca2{
+    position: relative;
+    top: 30px;
+    width: 250px;
+    height: 150px;
+}
+
+.foto-marca3{
+    position: relative;
+    top: 30px;
+    width: 250px;
+    height: 150px;
+}
+
+.marca1 {
+    font-size: 20px;
+    margin-top: 50px;
+    color:gray;
+}
+.marca2 {
+    font-size: 20px;
+    margin-top: 50px;
+    color:gray;
+}
+.marca3 {
+    font-size: 20px;
+    margin-top: 50px;
+    color:gray;
+}
+
+.parrafo4 {
+    grid-area: parrafo;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 40px;
+    text-overflow:ellipsis;
+    text-align: center;
+    justify-content: center;
+}
+
 /* responsive */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 990px) {
     #grid {
         grid-template-columns: 2fr;
         grid-template-areas: 
@@ -712,6 +811,10 @@ header {
         justify-content: space-around;
     }
 
+    .video3 {
+        display: none;
+    }
+
     .iniciales1 {
         margin-top: -20px;
         margin-bottom: 20px;
@@ -722,10 +825,9 @@ header {
             text-align: center;
         }
     }
+    
 
-    .video3 {
-        display: none;
-    }
+
 
     /* responsive contacto */
 
@@ -754,6 +856,27 @@ header {
     .foto-formulario {
         width: 400px;
         height: 400px;
+    }
+
+    /*responsive nosotros*/
+
+    #grid4 {
+        grid-template-columns: 2fr;
+        grid-template-areas: 
+        "logo"
+        "menu"
+        "frase"
+        "content"
+        "parrafo"
+        "footer"
+        ;
+    }
+
+    #frase-inicio4 {
+        text-align: center;
+        margin-top: 30px;
+        border: 5px solid #FF8D8D;
+        border-radius: 50px;
     }
 
 }
@@ -951,6 +1074,37 @@ header {
 
     .foto-formulario {
         display: none;
+    }
+
+    /*responsive nosotros*/
+
+    #grid4 {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "menu"
+        "frase"
+        "content"
+        "parrafo"
+        "footer"
+        ;
+    }
+
+    .nav-tabs {
+        display: none;
+    }
+
+    #frase-inicio4 {
+        text-align: center;
+        margin-top: 30px;
+        border: 5px solid #FF8D8D;
+        border-radius: 50px;
+    }
+
+    #content4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
     }
 
 }
